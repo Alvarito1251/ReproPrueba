@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="icon" href="./imgs/favicon.png">
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- Barra navegacion -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./inicio.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./compras.html">Bicis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accesorios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Contacto -->
+
+      <div class="contact_form">
+        <div class="formulario">      
+          <h1>Formulario de contacto</h1>
+            <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+              <form action="submeter-formulario.php" method="post">      
+                    <p>
+                      <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    </p>
+                    <p>
+                      <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    </p>
+                    <p>
+                      <label for="telefone" class="colocar_telefono">Teléfono
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>    
+                    <p>
+                      <label for="asunto" class="colocar_asunto">Haga su consulta
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <!-- <input  type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escriba su consulta"> -->
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Deje su mensaje"></textarea>
+                    </p>    
+                    <!-- <button type="submit" name="enviar_formulario" id="enviar" onclick="alert('Tu consulta fue enviada,te responderemos a la brevedad :)')"><p>Enviar</p> </button> -->
+                    <button onclick="submit();" type="button" class="btn btn-outline-primary">Enviar</button>
+                    <div id="botonSubmit" class="alert alert-primary alerta">Tu mensaje ha sido enviado</div>
+
+                    <p class="aviso">
+                      <span class="obligatorio"> * </span>Son obligatorios.
+                    </p>          
+              </form>
+        </div>  
+      </div>
+
+      <!-- Footer-->
+      <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Huellitas 2021</div></div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+      
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
