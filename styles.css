@@ -183,6 +183,3 @@ figure .trasera hr {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-p.precio {
-    color: tomato;
-}
