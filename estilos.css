@@ -23,6 +23,8 @@ body.dark{
   cursor: pointer;
   display: flex;
   outline: none;
+  width: 64px;
+  height: 38px;
 }
 
 .switch::after{
@@ -135,8 +137,10 @@ figure .trasera {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
 
-
+figure .trasera * {
+  color: #fff;
 }
 
 figure .trasera .NombreBici {
