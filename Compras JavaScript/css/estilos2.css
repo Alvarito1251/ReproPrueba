@@ -5,71 +5,15 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-/* dark mode */
 body{
     background-color: #f0f2f1;
-    transition: .3s ease all;
 }
-
-body.dark{
-    background: #000;
-}
-
-.switch{
-    margin-left: 10px;
-    background: #343058;
-    border-radius: 1000px;
-    border: none;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    outline: none;
-}
-
-.switch::after{
-    content: "";
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    background: #F1F1F1;
-    top: 4px;
-    left: 1px;
-    right: unset;
-    border-radius: 100px;
-    transition: .3s ease all;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .2);
-}
-
-.switch.active{
-    background: orange;
-    color: #000;
-}
-
-.switch.active::after{
-    right:0;
-    left: unset;
-}
-
-.switch span {
-    width: 30px;
-    height: 30px;
-    line-height: 35px;
-    display: block;
-    background: none;
-    color: #fff;
-}
-
-
-
-
-/* fichas */
 
 a{
     text-decoration: none;
 }
 
-.contenedor, .boton, .precio {
+.contenedor {
     max-width: 1200px;
     margin: 50px auto;
     display: flex;
@@ -78,13 +22,6 @@ a{
     justify-content: center;
 }
 
-.contenedor_tarjeta {
-    margin:20px;
-}
-
-.contenedor_tarjeta a {
-    display: inline-block;
-}
 
 .contenedor_tarjeta:hover figure {
     -webkit-transform:perspective(600px) rotateY(180deg) ;
@@ -97,14 +34,10 @@ a{
 
 }
 
-img{
-    width: 350px;
-    height: 300px;
-}
+
 
 figure {
-    width: 350px;
-    height: 300px;
+    height: 250px;
     margin:0;
     position: relative;
     transition: all ease .5s;
@@ -120,19 +53,17 @@ figure .trasera {
     transition: all ease .5s;
 }
 
-figure .frontal {
-    display:block;
-}
+
 
 figure .trasera {
     position: absolute;
     top:0;
-    padding: 20px;
+    
     color: #fff;
     transform: perspective(600px) rotateY(180deg);
     backface-visibility: hidden;
     overflow: auto;
-    background: #505050;
+    background: #000;
 
     display: flex;
     flex-direction: column;
@@ -161,25 +92,11 @@ figure .trasera hr {
     margin: 20px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    align-items: center;
+    gap: 20px;
 }
 
 .caja{
     width: 350px;
     height: 300px;
     gap: 20px;
-}
-.button{
-    padding:  .75rem 2rem .75rem 2rem;
-    background-color: #000;
-    margin: 1rem;
-    color: white;
-    border: none;
-    border-radius: .5rem;  
-}
-@media(max-width: 768px){
-    .grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
